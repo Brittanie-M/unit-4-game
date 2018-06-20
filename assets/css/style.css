@@ -1,0 +1,73 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat;
+}
+
+.jumbotron {
+    background-color: navajowhite;
+}
+
+.display-4 {
+    font-weight: bold;
+    color: rebeccapurple;
+    text-align: center; 
+}
+
+.lead {
+    font-weight: bolder;
+    font-size: 25px;
+    color: royalblue;
+    text-align: center;
+}
+
+.instructions {
+    background-color: rgb(138, 112, 145);
+    float: left;
+    padding: 15px; 
+    border: 5px dotted aquamarine
+   
+}
+
+.dir {
+    text-decoration: underline;
+    color: greenyellow;
+    font-weight: bold;
+}
+
+li {
+    color: greenyellow;
+}
+
+.match {
+    Background-color: rgb(19, 145, 124);
+    color: rgb(134, 37, 91);
+    font-weight: bold;
+    text-decoration: underline;
+    float: left;
+    height: 150px;
+    padding: 15px;
+    border: 5px double rgb(216, 155, 216); 
+    width: 15%;
+}
+
+.wins-losses {
+    background-color: coral;
+    text-decoration: underline;
+    color: rgb(157, 255, 0);
+    float: left;
+    padding: 15px; 
+    border: 5px double navy;
+    height: 150px; 
+    width: 15%;
+}
+
+.crystals {
+    float: left; 
+}
+
+.userScore {
+    background-color: rgb(138, 112, 145);
+    float: left;
+    padding: 15px; 
+    border: 5px dotted aquamarine
+}

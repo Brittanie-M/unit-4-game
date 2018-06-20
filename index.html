@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+  
+<head>
+    <meta charset = "UTF-8">
+    <title> Crystal Collector </title>
+
+    <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity = "sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin = "anonymous">
+    <link rel = "stylesheet" type = "text/css" href = "assets/css/style.css">
+    <link rel = "stylesheet" type = "text/css" href = "assets/css/reset.css">
+
+
+  </head>
+
+  <body>
+        <div class = "jumbotron jumbotron-fluid">
+                <div class = "header">
+                  <h1 class = "display-4"> * Welcome to Crystal Collector * </h1>
+                  <br>
+                  <p class = "lead"> Let's Play! </p>
+                </div>
+              </div>
+            
+        <div class = "instructions">
+            <h2 class = "dir"> How to Play </h2>
+
+            <br>
+
+            <ol>
+                <li> You will be generated a random number to match. </li>
+                <br>
+                <li> There are 4 crystals below, of which the value is unknown. </li>
+                <br>
+                <li> By clicking a crystal, you will add a specific amount of points to your score. </li>
+                <br>
+                <li> You win by matching your score to the random number. </li>
+                <br>
+                <li> You lose if your total score exceeds the random number. <!--***or if you run out of time.***--> </li>
+            </ol>
+            
+            <br> 
+
+            <h3 class = "dir"> Please Note: </h3>
+            <br>
+            <ul>
+                <li> The value of each crystal is hidden until clicked. </li>
+                <li> Each time the game starts, the values will change for each crystal. </li>
+            </ul>
+        </div>
+
+        <br> <br> <br>
+
+    <!--    **If I can figure out how to add a timer**
+
+        <div class = "timer">
+            <h2> Time Left:
+                <span id  = "timeLeft"> </span>
+            </h2>
+        </div> 
+    -->
+
+        <div class = "match">
+            <h2> 
+                Number to Match: 
+                <span id  = "computerGuess"> </span>
+            </h2>
+        </div>
+
+        <br> <br>
+
+        <div class = "wins-losses">
+            <h2>
+                Wins:
+                <span id  = "wins"> </span>
+            </h2>
+            <br> <br> <br>
+            <h2>
+                Losses:
+                <span id  = "losses"> </span>
+            </h2>
+        </div>
+        
+        <br> <br> <br>
+        <div class = "crystals">
+                <img src = "assets/images/gem1.png" class = "gems" id = "one" alt = "red crystal">
+                <img src = "assets/images/gem2.png" class = "gems" id = "two" alt = "yellow crystal">
+                <img src = "assets/images/gem3.png" class = "gems" id = "three" alt = "purple crystal">
+                <img src = "assets/images/gem4.png" class = "gems" id = "four" alt = "green crystal">
+        </div>
+
+        <div class = "userScore">
+            <h2>
+                Your score is:
+                <span id="total"></span>
+                </h2>
+
+        </div>
+
+            <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    </body>
+
+</html>
