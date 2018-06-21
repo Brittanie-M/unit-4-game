@@ -1,6 +1,7 @@
 body {
     background-image: url("../images/background.jpg");
     background-repeat: repeat;
+    
 }
 
 .jumbotron {
@@ -22,9 +23,10 @@ body {
 
 .instructions {
     background-color: rgb(138, 112, 145);
-    float: left;
     padding: 15px; 
-    border: 5px dotted aquamarine
+    border: 5px dotted aquamarine;
+    margin: 5px;
+    width: 40%; 
    
 }
 
@@ -42,32 +44,44 @@ li {
     Background-color: rgb(19, 145, 124);
     color: rgb(134, 37, 91);
     font-weight: bold;
+    font-size: 22px;
     text-decoration: underline;
-    float: left;
-    height: 150px;
-    padding: 15px;
-    border: 5px double rgb(216, 155, 216); 
-    width: 15%;
+    padding: 5px;
+    border: 5px double rgb(216, 155, 216);
+    margin: 15px; 
+    width: 15%; 
+    height: 150px; 
+    float: left; 
 }
 
 .wins-losses {
     background-color: coral;
     text-decoration: underline;
-    color: rgb(157, 255, 0);
-    float: left;
-    padding: 15px; 
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(153, 0, 255);
+    padding: 5px; 
     border: 5px double navy;
+    position: block;
     height: 150px; 
     width: 15%;
+    float: left; 
 }
 
 .crystals {
-    float: left; 
+    clear: both;
+    padding: 10px;
 }
 
 .userScore {
     background-color: rgb(138, 112, 145);
-    float: left;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: underline;
+    color: goldenrod;
     padding: 15px; 
-    border: 5px dotted aquamarine
+    border: 5px dotted aquamarine;
+    margin: 5px;
+    width: 15%;
+    height: 150px;
 }
