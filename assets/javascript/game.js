@@ -1,64 +1,59 @@
-$( document ).ready(function(){
-    var Random=Math.floor(Math.random()*101+19)
-    // Selects a random number to be shown at the start of the game
-    // Number should be should be between 19 - 120
-    //
+$( document ).ready (function() {
+    var Random = Math.floor(Math.random() * 127 + 35)
+    
     $('#computerGuess').text(Random);
-    // Appending random number to the computerGuess id in the html doc
-    //
-    var num1= Math.floor(Math.random()*12+1)
-    var num2= Math.floor(Math.random()*12+1)
-    var num3= Math.floor(Math.random()*12+1)
-    var num4= Math.floor(Math.random()*12+1)
-    // Setting up random numbers for each jewel
-    // Random number has to be between 1 - 12
-    // 
-    var userTotal= 0; 
-    var wins= 0;
+   
+    var num1 = Math.floor(Math.random() * 12 + 1)
+    var num2 = Math.floor(Math.random() * 12 + 1)
+    var num3 = Math.floor(Math.random() * 12 + 1)
+    var num4 = Math.floor(Math.random() * 12 + 1)
+    
+    var userTotal = 0; 
+    var wins = 0;
     var losses = 0;
-    //  Decaring variables for tallies
+
   $('#wins').text(wins);
   $('#losses').text(losses);
-  //resets the game
-  function reset(){
-        Random=Math.floor(Math.random()*101+19);
+  
+  function reset() {
+        Random = Math.floor(Math.random() * 127 + 35);
         console.log(Random)
         $('#computerGuess').text(Random);
-        num1= Math.floor(Math.random()*12+1);
-        num2= Math.floor(Math.random()*12+1);
-        num3= Math.floor(Math.random()*12+1);
-        num4= Math.floor(Math.random()*12+1);
-        userTotal= 0;
+        num1 = Math.floor(Math.random() * 12 + 1);
+        num2 = Math.floor(Math.random() * 12 + 1);
+        num3 = Math.floor(Math.random() * 12 + 1);
+        num4 = Math.floor(Math.random() * 12 + 1);
+        userTotal = 0;
         $('#total').text(userTotal);
         } 
-  //adds the wins to the userTotal
+  
   function yay(){
   alert("You won!");
     wins++; 
     $('#wins').text(wins);
     reset();
   }
-  //addes the losses to the userTotal
+  
   function loser(){
   alert ("You lose!");
     losses++;
     $('#losses').text(losses);
     reset()
   }
-  //sets up click for jewels
-    $('#one').on ('click', function(){
+  
+    $('#one').on ('click', function() {
       userTotal = userTotal + num1;
       console.log("New userScore = " + userTotal);
       $('#total').text(userTotal); 
-            //sets win/lose conditions
+            
           if (userTotal == Random){
             yay();
           }
-          else if ( userTotal > Random){
+          else if (userTotal > Random){
             loser();
           }   
     })  
-    $('#two').on ('click', function(){
+    $('#two').on ('click', function() {
       userTotal = userTotal + num2;
       console.log("New userScore= " + userTotal);
       $('#total').text(userTotal); 
@@ -69,11 +64,11 @@ $( document ).ready(function(){
             loser();
           } 
     })  
-    $('#three').on ('click', function(){
+    $('#three').on ('click', function() {
       userTotal = userTotal + num3;
       console.log("New userScore= " + userTotal);
       $('#total').text(userTotal);
-  //sets win/lose conditions
+  
             if (userTotal == Random){
             yay();
           }
@@ -81,7 +76,7 @@ $( document ).ready(function(){
             loser();
           } 
     })  
-    $('#four').on ('click', function(){
+    $('#four').on ('click', function() {
       userTotal = userTotal + num4;
       console.log("New userScore= " + userTotal);
       $('#total').text(userTotal); 
